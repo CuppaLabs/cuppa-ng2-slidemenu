@@ -1,0 +1,14 @@
+<button (click)="menuToggle()" class="hamburger hamburger--arrow" type="button" [ngClass]="{'is-active': menuState, '': !menuState}">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+  </span>
+</button>
+<div class="menu-container cuppa-menu" [ngClass]="{'show-menu': menuState, 'hide-menu': !menuState}">
+    <ul>
+        <li *ngFor="let item of datalist"><a href="#">{{item.title}}</a>
+           <ul *ngIf="item.subItems" class="sub-menu">
+               <li *ngFor="let subitem of item.subItems"><a href="#">{{subitem.title}}</a></li>
+           </ul>
+        </li>
+    </ul>
+</div>
