@@ -46,14 +46,20 @@ import {
     </nav>
     <div class="jumbotron col-md-12">
       <div class="col-md-6">
-        <h1 class="component-title">Cuppa Slide Menu</h1>
-        <h2>A touch slide out navigation menu for web and mobile</h2>
+        <h1 class="component-title"><img style="width:65px;" src="assets/img/angular-logo.png"> Cuppa Slide Menu</h1>
+        <h2>Angular 2 touch slide out navigation menu for web and mobile</h2>
         <h4>Click on hamburger menu on top left  corner</h4>
 
         <p class="bt-group">
             <a href="https://cuppa-angular2-oauth.herokuapp.com/login" target="_blank" type="button" class="btn btn-danger btn-lg"><i class="fa fa-github" aria-hidden="true"></i><span class="hidden-xs">Github</span></a>
             <a href="https://github.com/CuppaLabs/angular2-social-login/archive/master.zip" type="button" class="btn btn-danger btn-lg"><i class="fa fa-download" aria-hidden="true"></i><span class="hidden-xs"> Download </span></a>
         </p>
+      </div>
+      <div class="col-md-6">
+        <div class="iphone-img">
+        <img style="width: 71%;" src="assets/img/iphone-empty.png">
+        <video type="video/webm" loop="" autoplay="" src="assets/img/demo3.webm"></video>
+        </div>
       </div>
     </div>
   `

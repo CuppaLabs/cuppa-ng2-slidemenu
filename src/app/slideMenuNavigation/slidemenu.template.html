@@ -1,4 +1,5 @@
-<button (click)="menuToggle()" (clickOutside)="closeMenu()"class="hamburger hamburger--arrow" type="button" [ngClass]="{'is-active': menuState, '': !menuState}">
+<span (clickOutside)="closeMenu()">
+<button (click)="menuToggle()" class="hamburger hamburger--arrow" type="button" [ngClass]="{'is-active': menuState, '': !menuState}">
   <span class="hamburger-box">
     <span class="hamburger-inner"></span>
   </span>
@@ -16,4 +17,5 @@
         </li>
     </ul>
 </div>
+<span>
 <!--<div class="cuppa-menu-overlay" [ngClass]="{'show-overlay': menuState, 'hide-overlay': !menuState}"></div> -->

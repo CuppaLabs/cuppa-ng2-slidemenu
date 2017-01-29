@@ -30,6 +30,9 @@ body{
   color: #0ea76e;
   padding-bottom: 15px;
   padding-top: 50px;
+  max-height: 90%;
+  overflow: hidden;
+  border-bottom: 1px solid;
 }
 .jumbotron > p{
   font-size: 18px;
@@ -42,6 +45,17 @@ body{
 .jumbotron h4{
    padding:  15px; 
    font-weight: 300; 
+}
+.iphone-img{
+    margin-top: 25px;
+    position: relative;
+}
+.iphone-img > video{
+    position: absolute;
+    left: 87px;
+    top: 51px;
+    width: 48%;
+    border: 2px solid #ccc;
 }
 .component-title{
   font-weight: 400;
@@ -86,6 +100,13 @@ iframe{
     .bt-group{
           padding: 35px 0px;
     }
+    .iphone-img > video{
+    position: absolute;
+    left: 146px;
+    top: 75px;
+    width: 48%;
+    border: 2px solid #ccc;
+}
 }
 .bt-group .btn{
   width:150px;
