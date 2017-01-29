@@ -31,14 +31,23 @@
 
 }
 .sub-menu > li > a{
-    padding-left: 30px !important;
+    padding-left: 50px !important;
 }
 .cuppa-menu ul > li > a{
     display: block;
-    padding: 15px;
+    padding: 15px 30px;
     background: #fff;
     text-decoration: none;
     border-bottom: 1px solid #ccc;
+}
+.cuppa-menu ul > li > a:hover{
+    background: #3fd48f !important;
+    color: #fff;
+}
+.cuppa-menu ul > li > a > i{
+    font-size: 24px;
+    float: right;
+    margin-top: -2px;
 }
 /*!
  * Hamburgers
@@ -106,3 +115,19 @@
 
 .hamburger--arrow-r.is-active .hamburger-inner::after {
   transform: translate3d(9px, 0, 0) rotate(-45deg) scale(0.7, 1); }
+.cuppa-menu-overlay{
+    position: fixed;
+    background: #000;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    display: none;
+    transition: all .2s linear;
+}
+.show-overlay{
+    display: block;
+}
+.hide-overlay{
+    display: none;
+}

@@ -18,7 +18,7 @@ import {
     './app.component.css'
   ],
   template: `
-  <nav class="navbar navbar-default">
+  <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
          <cuppa-slidemenu></cuppa-slidemenu>
@@ -51,7 +51,7 @@ import {
         <h4>Click on hamburger menu on top left  corner</h4>
 
         <p class="bt-group">
-            <a href="https://cuppa-angular2-oauth.herokuapp.com/login" target="_blank" type="button" class="btn btn-danger btn-lg"><i class="fa fa-jsfiddle" aria-hidden="true"></i><span class="hidden-xs">Github</span></a>
+            <a href="https://cuppa-angular2-oauth.herokuapp.com/login" target="_blank" type="button" class="btn btn-danger btn-lg"><i class="fa fa-github" aria-hidden="true"></i><span class="hidden-xs">Github</span></a>
             <a href="https://github.com/CuppaLabs/angular2-social-login/archive/master.zip" type="button" class="btn btn-danger btn-lg"><i class="fa fa-download" aria-hidden="true"></i><span class="hidden-xs"> Download </span></a>
         </p>
       </div>

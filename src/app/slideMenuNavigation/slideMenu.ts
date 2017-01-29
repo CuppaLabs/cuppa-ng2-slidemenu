@@ -1,6 +1,7 @@
 import { Component, OnInit, NgModule, OnChanges, ViewEncapsulation, Input, Output, EventEmitter, ElementRef, AfterViewInit, Pipe, PipeTransform } from '@angular/core';
 import { SafeResourceUrl, DomSanitizer } from '@angular/platform-browser';
 import { CommonModule }       from '@angular/common';
+import { ClickOutsideDirective } from './clickOutside';
 
 @Component({
   selector: 'cuppa-slidemenu',
@@ -16,12 +17,18 @@ export class SlideMenu implements AfterViewInit{
 
     constructor(private _elementRef : ElementRef, private sanitizer: DomSanitizer) {   
         this.datalist = [
-                            {"title":"Component","link":"#"},
-                            {"title":"Component","link":"#"},
-                            {"title":"Component","link":"#",
+                            {"title":"Electricity","link":"#"},
+                            {"title":"Mobile Bill","link":"#"},
+                            {"title":"Home and Kitchen","link":"#",
                                 "subItems":[
-                                            {"title":"Sub Item","link":"#"},
-                                            {"title":"Sub Item","link":"#"},
+                                            {"title":"Furniture","link":"#"},
+                                            {"title":"Cookware","link":"#"},
+                                           ]
+                            },
+                            {"title":"Car and Bike Accessories","link":"#",
+                                "subItems":[
+                                            {"title":"Tyres and Alloys","link":"#"},
+                                            {"title":"Comfort and Safety","link":"#"},
                                            ]
                             },
                         ];
@@ -29,31 +36,24 @@ export class SlideMenu implements AfterViewInit{
 
     ngOnInit() {
        this.menuState = false;
-       this.targetElement = document.getElementsByTagName('body')[0];
-       
-       console.log(this.targetElement);
-
     }
     ngAfterViewInit() {
        
     }
     private menuToggle(){
-         this.menuState = !this.menuState;
-         if(this.menuState){
-             //this.targetElement.style['transition'] = 'all .3s linear';
-             //this.targetElement.style['margin-left'] = '300px';
-              //this.targetElement.style['overflow'] = 'hidden';
-         }
-         else{
-             //this.targetElement.style['margin-left'] = '0px'; 
-         }
-         
+         this.menuState = !this.menuState;      
+    }
+    private closeMenu(){
+         this.menuState = false;      
+    }
+    private toggleSubMenu(item:any){
+        item.expand = !item.expand;
     }
 
  }
 @NgModule({
   imports:      [ CommonModule ],
-  declarations: [SlideMenu],
-  exports:      [SlideMenu]
+  declarations: [SlideMenu, ClickOutsideDirective],
+  exports:      [SlideMenu, ClickOutsideDirective]
 })
 export class SlideMenuModule { }

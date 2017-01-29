@@ -32,10 +32,12 @@ module.exports = {
     /** <link> tags for favicons **/
     { rel: 'icon', type: 'image/png', sizes: '32x32', href: '/assets/icon/favicon-32x32.png' },
     { rel: 'icon', type: 'image/png', sizes: '96x96', href: '/assets/icon/favicon-96x96.png' },
-    { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/assets/icon/favicon-16x16.png' },
+    { rel: 'icon', type: 'image/png', sizes: '16x16', href: '/assets/img/cuppa-favicon16x16.png' },
 
     /** <link> tags for a Web App Manifest **/
+    { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500' },
     { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' },
+    { rel: 'stylesheet', href: '/assets/css/font-awesome.min.css' },
     { rel: 'stylesheet', href: '/assets/css/styles.css' },
     { rel: 'manifest', href: '/assets/manifest.json' }
   ],

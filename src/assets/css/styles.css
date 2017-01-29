@@ -18,6 +18,7 @@ body{
     padding-top: 5px;
     padding-bottom: 4px;
     border-bottom: 1px solid #ccc;
+    z-index: 9999;
 }
 .navbar-brand {
     
@@ -28,6 +29,7 @@ body{
   background: #fff;
   color: #0ea76e;
   padding-bottom: 15px;
+  padding-top: 50px;
 }
 .jumbotron > p{
   font-size: 18px;
