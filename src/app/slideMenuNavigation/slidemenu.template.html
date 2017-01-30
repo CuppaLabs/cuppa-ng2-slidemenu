@@ -1,9 +1,7 @@
 <span (clickOutside)="closeMenu()">
-<button (click)="menuToggle()" class="hamburger hamburger--arrow" type="button" [ngClass]="{'is-active': menuState, '': !menuState}">
-  <span class="hamburger-box">
-    <span class="hamburger-inner"></span>
-  </span>
-</button>
+    <button (click)="menuToggle()" class="hamburger hamburger-arrow-left" [ngClass]="{'is-active': menuState, '': !menuState}">
+        <span class="icon"></span>
+    </button>
 <div class="menu-container cuppa-menu" [ngClass]="{'show-menu': menuState, 'hide-menu': !menuState}">
     <ul>
         <li *ngFor="let item of datalist">

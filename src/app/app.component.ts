@@ -46,8 +46,9 @@ import {
     </nav>
     <div class="jumbotron col-md-12">
       <div class="col-md-6">
-        <h1 class="component-title"><img style="width:65px;" src="assets/img/angular-logo.png"> Cuppa Slide Menu</h1>
-        <h2>Angular 2 touch slide out navigation menu for web and mobile</h2>
+        <img style="width:18%;" src="assets/img/angular-logo.png">
+        <h1 class="component-title">Cuppa Slide Menu</h1>
+        <h2>Angular 2 slide out navigation menu for web and mobile</h2>
         <h4>Click on hamburger menu on top left  corner</h4>
 
         <p class="bt-group">
@@ -58,7 +59,7 @@ import {
       <div class="col-md-6">
         <div class="iphone-img">
         <img style="width: 71%;" src="assets/img/iphone-empty.png">
-        <video type="video/webm" loop="" autoplay="" src="assets/img/demo3.webm"></video>
+        <video type="video/webm" loop="" autoplay="" src="assets/img/demo4.webm"></video>
         </div>
       </div>
     </div>

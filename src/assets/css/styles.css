@@ -29,7 +29,7 @@ body{
   background: #fff;
   color: #0ea76e;
   padding-bottom: 15px;
-  padding-top: 50px;
+  padding-top: 60px; 
   max-height: 90%;
   overflow: hidden;
   border-bottom: 1px solid;
@@ -89,7 +89,7 @@ iframe{
 }
 @media (min-width: 768px){
     .component-title{ 
-      margin-top: 45px;
+      margin-top: 13px;
     }
     .nav-pills > li > a{
       padding: 10px 15px;
@@ -98,7 +98,7 @@ iframe{
         padding: 80px 15px;
     }
     .bt-group{
-          padding: 35px 0px;
+          padding: 25px 0px;
     }
     .iphone-img > video{
     position: absolute;

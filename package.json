@@ -1,14 +1,14 @@
 {
-  "name": "angular2-webpack-starter",
-  "version": "5.4.1",
-  "description": "An Angular 2 Webpack Starter kit featuring Angular 2 (Router, Http, Forms, Services, Tests, E2E, Coverage), Karma, Protractor, Jasmine, Istanbul, TypeScript, and Webpack by AngularClass",
+  "name": "cuppa-ng2-slidemenu",
+  "version": "1.0.0",
+  "description": "An Angular 2 slide out navigation menu for web and mobile. Also, called as slide menu.",
   "keywords": [
-    "angular2",
-    "webpack",
-    "typescript"
+    "angular2 menu",
+    "slide menu",
+    "ng2 menu"
   ],
-  "author": "Patrick Stapleton <patrick@angularclass.com>",
-  "homepage": "https://github.com/angularclass/angular2-webpack-starter",
+  "author": "Pradeep Terli",
+  "homepage": "",
   "license": "MIT",
   "scripts": {
     "build:aot:prod": "npm run clean:dist && npm run clean:aot && webpack --config config/webpack.prod.js  --progress --profile --bail",
