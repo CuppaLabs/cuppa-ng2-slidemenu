@@ -30,7 +30,8 @@ body{
   color: #0ea76e;
   padding-bottom: 15px;
   padding-top: 60px; 
-  max-height: 90%;
+  max-height: 80%;
+  min-height: 75%;
   overflow: hidden;
   border-bottom: 1px solid;
 }
@@ -98,7 +99,7 @@ iframe{
         padding: 80px 15px;
     }
     .bt-group{
-          padding: 25px 0px;
+          padding: 10px 0px;
     }
     .iphone-img > video{
     position: absolute;
@@ -167,4 +168,17 @@ footer{
     .navbar-brand{
         margin-left: 30px !important;
     }
+}
+.component-details{
+    background: #fff;
+}
+pre code{
+    padding:10px;
+}
+handy-syntax-highlighter{
+    display: inline-block;
+    width: 100%;
+}
+.code-list-ul{
+    list-style: none;
 }

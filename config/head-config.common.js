@@ -36,8 +36,10 @@ module.exports = {
 
     /** <link> tags for a Web App Manifest **/
     { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Roboto:100,200,300,400,500' },
-    { rel: 'stylesheet', href: 'https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css' },
+    
+    { rel: 'stylesheet', href: '/assets/css/bootstrap.min.css' },
     { rel: 'stylesheet', href: '/assets/css/font-awesome.min.css' },
+     { rel: 'stylesheet', href: '/assets/css/prism.css' },
     { rel: 'stylesheet', href: '/assets/css/styles.css' },
     { rel: 'manifest', href: '/assets/manifest.json' }
   ],

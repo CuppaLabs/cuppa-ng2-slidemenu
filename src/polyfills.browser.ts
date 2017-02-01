@@ -28,7 +28,9 @@ import 'core-js/es6/reflect';
 
 import 'core-js/es7/reflect';
 import 'zone.js/dist/zone';
-
+import 'prismjs';
+import 'prismjs/components/prism-javascript';
+import 'prismjs/components/prism-typescript';
 // Typescript emit helpers polyfill
 import 'ts-helpers';
 

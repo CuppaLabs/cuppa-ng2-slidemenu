@@ -17,56 +17,26 @@ import {
   styleUrls: [
     './app.component.css'
   ],
-  template: `
-  <nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-         <cuppa-slidemenu></cuppa-slidemenu>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="https://cuppalabs.github.io/angular2-social-login/">
-          <img alt="Brand" src="assets/img/cuppa-logo.png">
-          Cuppa Labs</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="documentation.html">Getting Started<span class="sr-only">(current)</span></a></li>
-              <li><a href="#architecture">Installation</a></li>
-              <li><a href="#flowchart">Usage</a></li>
-              <li><a href="#technologies">Configuration</a></li>
-              <li><a href="https://github.com/CuppaLabs/angular2-social-login">Github</a></li>
-
-            </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
-    <div class="jumbotron col-md-12">
-      <div class="col-md-6">
-        <img style="width:18%;" src="assets/img/angular-logo.png">
-        <h1 class="component-title">Cuppa Slide Menu</h1>
-        <h2>Angular 2 slide out navigation menu for web and mobile</h2>
-        <h4>Click on hamburger menu on top left  corner</h4>
-
-        <p class="bt-group">
-            <a href="https://cuppa-angular2-oauth.herokuapp.com/login" target="_blank" type="button" class="btn btn-danger btn-lg"><i class="fa fa-github" aria-hidden="true"></i><span class="hidden-xs">Github</span></a>
-            <a href="https://github.com/CuppaLabs/angular2-social-login/archive/master.zip" type="button" class="btn btn-danger btn-lg"><i class="fa fa-download" aria-hidden="true"></i><span class="hidden-xs"> Download </span></a>
-        </p>
-      </div>
-      <div class="col-md-6">
-        <div class="iphone-img">
-        <img style="width: 71%;" src="assets/img/iphone-empty.png">
-        <video type="video/webm" loop="" autoplay="" src="assets/img/demo4.webm"></video>
-        </div>
-      </div>
-    </div>
-  `
+  templateUrl:'app.component.html'
 })
 export class AppComponent implements OnInit {
 
+    private menuItemsArray: any[] = [
+                            {"title":"Electricity","link":"#"},
+                            {"title":"Mobile Bill","link":"#"},
+                            {"title":"Home and Kitchen","link":"#",
+                                "subItems":[
+                                            {"title":"Furniture","link":"#"},
+                                            {"title":"Cookware","link":"#"},
+                                           ]
+                            },
+                            {"title":"Car and Bike Accessories","link":"#",
+                                "subItems":[
+                                            {"title":"Tyres and Alloys","link":"#"},
+                                            {"title":"Comfort and Safety","link":"#"},
+                                           ]
+                            },
+                        ];
 
   constructor(
     
@@ -74,14 +44,36 @@ export class AppComponent implements OnInit {
 
   public ngOnInit() {
     
-  }
-
+  } 
+  npminstallScript: string = 'npm install cuppa-ng2-slidemenu';
+  installScript: string = "import { SlideMenuModule } from 'cuppa-ng2-grid/cuppa-ng2-slidemenu';";
+  moduleScript: string =  "import { NgModule } from '@angular/core';\n"+
+        "import { BrowserModule } from '@angular/platform-browser';\n"+
+        "import { GridModule } from '@progress/kendo-angular-grid';\n"+
+        "import { AppComponent } from './app.component';\n"+
+        "\n"+
+        "@NgModule({\n"+
+        "   bootstrap: [ AppComponent ],\n"+
+        "   declarations: [AppComponent],\n"+
+        "   imports: [SlideMenuModule] // Import SlideMenu module variable here \n"+
+        "})\n"+
+        "export class AppModule {\n"+
+        "}";
+  htmlTag: string = '<cuppa-slidemenu [menulist]="menuItemsArray"></cuppa-slidemenu>';
+  jsScript:string =                 'private menuItemsArray: any[] = [ \n'+
+                                    '       {"title":"Electricity","link":"#"},\n'+
+                                    '       {"title":"Mobile Bill","link":"#"},\n'+
+                                    '       {"title":"Home and Kitchen","link":"#",\n'+
+                                    '       "subItems":[\n'+
+                                    '                   {"title":"Furniture","link":"#"},\n'+
+                                    '                   {"title":"Cookware","link":"#"},\n'+
+                                    '                  ]\n'+
+                                    '       },\n'+
+                                    '       {"title":"Car and Bike Accessories","link":"#",\n'+
+                                    '        "subItems":[\n'+
+                                    '                     {"title":"Tyres and Alloys","link":"#"},\n'+
+                                    '                     {"title":"Comfort and Safety","link":"#"},\n'+
+                                    '                    ]\n'+
+                                    '       },\n'+
+                                    ' ];';
 }
-
-/*
- * Please review the https://github.com/AngularClass/angular2-examples/ repo for
- * more angular app examples that you may copy/paste
- * (The examples may not be updated as quickly. Please open an issue on github for us to update it)
- * For help or questions please contact us at @AngularClass on twitter
- * or our chat on Slack at https://AngularClass.com/slack-join
- */

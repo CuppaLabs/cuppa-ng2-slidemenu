@@ -4,7 +4,7 @@
     </button>
 <div class="menu-container cuppa-menu" [ngClass]="{'show-menu': menuState, 'hide-menu': !menuState}">
     <ul>
-        <li *ngFor="let item of datalist">
+        <li *ngFor="let item of menulist">
             <a href="#" (click)="toggleSubMenu(item)">{{item.title}} 
                 <i *ngIf="item.subItems && !item.expand" class="fa fa-angle-down"></i>
                 <i *ngIf="item.subItems && item.expand" class="fa fa-angle-up"></i>

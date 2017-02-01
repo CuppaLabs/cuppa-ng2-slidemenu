@@ -10,31 +10,14 @@ import { ClickOutsideDirective } from './clickOutside';
 })
 
 export class SlideMenu implements AfterViewInit{ 
-    
-    private datalist: any;
+
+    @Input() menulist: any;
     private menuState: boolean;
     private targetElement: any;
     private overlayElem: any;
 
     constructor(private _elementRef : ElementRef, private sanitizer: DomSanitizer) {   
-        this.datalist = [
-                            {"title":"Electricity","link":"#"},
-                            {"title":"Mobile Bill","link":"#"},
-                            {"title":"Home and Kitchen","link":"#",
-                                "subItems":[
-                                            {"title":"Furniture","link":"#"},
-                                            {"title":"Cookware","link":"#"},
-                                           ]
-                            },
-                            {"title":"Car and Bike Accessories","link":"#",
-                                "subItems":[
-                                            {"title":"Tyres and Alloys","link":"#"},
-                                            {"title":"Comfort and Safety","link":"#"},
-                                           ]
-                            },
-                        ];
-          
-                        this.addOverlayElement();
+        this.addOverlayElement();
     }
 
     ngOnInit() {
