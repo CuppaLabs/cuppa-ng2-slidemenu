@@ -36,7 +36,7 @@ pre[class*="language-"] {
 	background-color: #fdfdfd;
 	background-size: 3em 3em;
 	background-origin: content-box;
-	overflow: visible;
+	overflow: auto;
 	padding: 0;
 	width: 100%;
 }

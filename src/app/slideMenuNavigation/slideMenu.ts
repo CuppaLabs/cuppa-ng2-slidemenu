@@ -12,6 +12,12 @@ import { ClickOutsideDirective } from './clickOutside';
 export class SlideMenu implements AfterViewInit{ 
 
     @Input() menulist: any;
+    @Output('open')
+    open: EventEmitter<number> = new EventEmitter<number>();
+    @Output('close')
+    close: EventEmitter<number> = new EventEmitter<number>();
+    @Output('onItemSelect')
+    itemSelect: EventEmitter<number> = new EventEmitter<number>();
     private menuState: boolean;
     private targetElement: any;
     private overlayElem: any;
@@ -29,10 +35,19 @@ export class SlideMenu implements AfterViewInit{
     private menuToggle(){
          this.menuState = !this.menuState; 
          this.toggleOverlay();     
+         if(this.menuState){
+             this.open.emit();
+         }
+         else{
+             this.close.emit();
+         }
     }
     private closeMenu(){
          this.menuState = false; 
          this.overlayElem.style['opacity'] = 0;        
+    }
+    private onItemClick(item:any){
+          this.itemSelect.emit(item);  
     }
     private toggleSubMenu(item:any){
         item.expand = !item.expand;

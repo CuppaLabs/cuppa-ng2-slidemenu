@@ -4,13 +4,13 @@
     </button>
 <div class="menu-container cuppa-menu" [ngClass]="{'show-menu': menuState, 'hide-menu': !menuState}">
     <ul>
-        <li *ngFor="let item of menulist">
+        <li *ngFor="let item of menulist" (click)="onItemClick(item)">
             <a href="#" (click)="toggleSubMenu(item)">{{item.title}} 
                 <i *ngIf="item.subItems && !item.expand" class="fa fa-angle-down"></i>
                 <i *ngIf="item.subItems && item.expand" class="fa fa-angle-up"></i>
             </a>
            <ul *ngIf="item.subItems" class="sub-menu" [hidden]="!item.expand">
-               <li *ngFor="let subitem of item.subItems"><a href="#">{{subitem.title}}</a></li>
+               <li *ngFor="let subitem of item.subItems" (click)="onItemClick(subitem)"><a href="#">{{subitem.title}}</a></li>
            </ul>
         </li>
     </ul>

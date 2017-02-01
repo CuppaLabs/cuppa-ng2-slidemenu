@@ -41,10 +41,18 @@ export class AppComponent implements OnInit {
   constructor(
     
   ) {}
-
+  public onMenuClose(){
+    console.log("menu closed");
+  }
+  public onMenuOpen(){
+    console.log("menu Opened");
+  }
   public ngOnInit() {
     
   } 
+  private onItemSelect(item:any){
+    console.log(item);
+  }
   npminstallScript: string = 'npm install cuppa-ng2-slidemenu';
   installScript: string = "import { SlideMenuModule } from 'cuppa-ng2-grid/cuppa-ng2-slidemenu';";
   moduleScript: string =  "import { NgModule } from '@angular/core';\n"+
@@ -59,7 +67,7 @@ export class AppComponent implements OnInit {
         "})\n"+
         "export class AppModule {\n"+
         "}";
-  htmlTag: string = '<cuppa-slidemenu [menulist]="menuItemsArray"></cuppa-slidemenu>';
+  htmlTag: string = '<cuppa-slidemenu [menulist]="menuItemsArray" (open)="onMenuOpen()" (close)="onMenuClose()" (onItemSelect)="onItemSelect($event)"></cuppa-slidemenu>';
   jsScript:string =                 'private menuItemsArray: any[] = [ \n'+
                                     '       {"title":"Electricity","link":"#"},\n'+
                                     '       {"title":"Mobile Bill","link":"#"},\n'+

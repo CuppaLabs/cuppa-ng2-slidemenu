@@ -112,6 +112,9 @@ iframe{
 .bt-group .btn{
   width:150px;
 }
+.bt-group .btn > .fa{
+    margin-right: 10px;
+}
 .ad-section{
     display: block;
     position: absolute;

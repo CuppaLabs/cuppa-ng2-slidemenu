@@ -1,7 +1,7 @@
 <nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
-         <cuppa-slidemenu [menulist]="menuItemsArray"></cuppa-slidemenu>
+         <cuppa-slidemenu [menulist]="menuItemsArray" (open)="onMenuOpen()" (close)="onMenuClose()" (onItemSelect)="onItemSelect($event)"></cuppa-slidemenu>
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
@@ -10,14 +10,13 @@
           </button>
           <a class="navbar-brand" href="https://cuppalabs.github.io/angular2-social-login/">
           <img alt="Brand" src="assets/img/cuppa-logo.png">
-          Cuppa Labs</a>
+          Cuppa Slide Menu</a>
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
               <li><a href="#Getting_Started_12">Getting Started<span class="sr-only">(current)</span></a></li>
               <li><a href="#Getting_Started_12">Installation</a></li>
-              <li><a href="#flowchart">Usage</a></li>
-              <li><a href="#technologies">Configuration</a></li>
+              <li><a href="#Installation_14">Usage</a></li>
               <li><a href="https://github.com/CuppaLabs/angular2-social-login">Github</a></li>
 
             </ul>
@@ -32,8 +31,9 @@
         <h4>Click on hamburger menu on top left  corner</h4>
 
         <p class="bt-group">
-            <a href="https://cuppa-angular2-oauth.herokuapp.com/login" target="_blank" type="button" class="btn btn-danger btn-lg"><i class="fa fa-github" aria-hidden="true"></i><span class="hidden-xs">Github</span></a>
-            <a href="https://github.com/CuppaLabs/angular2-social-login/archive/master.zip" type="button" class="btn btn-danger btn-lg"><i class="fa fa-download" aria-hidden="true"></i><span class="hidden-xs"> Download </span></a>
+            <a href="https://github.com/CuppaLabs/cuppa-angular2-slidemenu" target="_blank" type="button" class="btn btn-danger btn-lg"><i class="fa fa-github" aria-hidden="true"></i><span class="hidden-xs">Github</span></a>
+            <a href="#" type="button" class="btn btn-danger btn-lg"><i class="fa fa-tv" aria-hidden="true"></i><span class="hidden-xs">Demo</span></a>
+            <a href="https://github.com/CuppaLabs/cuppa-angular2-slidemenu/archive/master.zip" type="button" class="btn btn-danger btn-lg"><i class="fa fa-download" aria-hidden="true"></i><span class="hidden-xs"> Download </span></a>
         </p>
       </div>
       <div class="col-md-6">
