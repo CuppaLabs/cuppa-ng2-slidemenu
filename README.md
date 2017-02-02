@@ -3,7 +3,7 @@
 Hamburger kind of menu for mobile and web is very common feature and a must have as well, these days.
 
 ## Demo
-### View the [Demo here](https://cuppalabs.github.io/angular2-slide-menu/).
+### View the [Demo here](https://cuppalabs.github.io/cuppa-ng2-slidemenu/).
 
 ## Getting Started
 
@@ -61,6 +61,16 @@ private menuItemsArray: any[] = [
                     ]
        },
  ];
+
+  public onMenuClose(){
+    console.log("menu closed");
+  }
+  public onMenuOpen(){
+    console.log("menu Opened");
+  }
+  private onItemSelect(item:any){
+    console.log(item);
+  }
 ```
 
 Thats all Folks !! You are good to go.

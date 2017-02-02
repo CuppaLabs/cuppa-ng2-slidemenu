@@ -47,12 +47,12 @@ export class AppComponent implements OnInit {
   public onMenuOpen(){
     console.log("menu Opened");
   }
-  public ngOnInit() {
-    
-  } 
   private onItemSelect(item:any){
     console.log(item);
   }
+    public ngOnInit() {
+    
+  } 
   npminstallScript: string = 'npm install cuppa-ng2-slidemenu';
   installScript: string = "import { SlideMenuModule } from 'cuppa-ng2-slidemenu/cuppa-ng2-slidemenu';";
   moduleScript: string =  "import { NgModule } from '@angular/core';\n"+
@@ -83,5 +83,14 @@ export class AppComponent implements OnInit {
                                     '                     {"title":"Comfort and Safety","link":"#"},\n'+
                                     '                    ]\n'+
                                     '       },\n'+
-                                    ' ];';
+                                    ' ];\n'+
+                                    'public onMenuClose(){\n'+
+                                    '    console.log("menu closed");\n'+
+                                    '}\n'+
+                                    'public onMenuOpen(){\n'+
+                                    '    console.log("menu Opened");\n'+
+                                    '}\n'+
+                                    'private onItemSelect(item:any){\n'+
+                                    '    console.log(item);\n'+
+                                    '};'
 }
