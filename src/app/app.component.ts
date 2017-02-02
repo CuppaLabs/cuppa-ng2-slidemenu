@@ -36,6 +36,24 @@ export class AppComponent implements OnInit {
                                             {"title":"Comfort and Safety","link":"#"},
                                            ]
                             },
+                            {"title":"Interior Design","link":"#",
+                                "subItems":[
+                                            {"title":"Furniture","link":"#"},
+                                            {"title":"Matress and Flowers","link":"#"},
+                                           ]
+                            },
+                            {"title":"Televisions","link":"#",
+                                "subItems":[
+                                            {"title":"Samsung","link":"#"},
+                                            {"title":"LG","link":"#"},
+                                           ]
+                            },
+                            {"title":"Computer Accessories","link":"#",
+                                "subItems":[
+                                            {"title":"Keyboards","link":"#"},
+                                            {"title":"Monitors","link":"#"},
+                                           ]
+                            },
                         ];
 
   constructor(
@@ -53,6 +71,13 @@ export class AppComponent implements OnInit {
     public ngOnInit() {
     
   } 
+  private showdemomsg = false;
+  private showMsg(){
+    this.showdemomsg = true;
+  }
+  private hideMsg(){
+    this.showdemomsg = false;
+  }
   npminstallScript: string = 'npm install cuppa-ng2-slidemenu';
   installScript: string = "import { SlideMenuModule } from 'cuppa-ng2-slidemenu/cuppa-ng2-slidemenu';";
   moduleScript: string =  "import { NgModule } from '@angular/core';\n"+

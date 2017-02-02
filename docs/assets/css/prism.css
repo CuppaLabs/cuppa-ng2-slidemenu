@@ -32,7 +32,7 @@ pre[class*="language-"] {
 	position: relative;
 	margin: .5em 0;
 	box-shadow: -1px 0px 0px 0px #358ccb, 0px 0px 0px 1px #dfdfdf;
-	border-left: 10px solid #358ccb;
+	border-left: 5px solid #358ccb;
 	background-color: #fdfdfd;
 	background-size: 3em 3em;
 	background-origin: content-box;

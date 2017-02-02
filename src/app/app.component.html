@@ -8,7 +8,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="https://cuppalabs.github.io/cuppa-angular2-slidemenu/">
+          <a class="navbar-brand" href="https://cuppalabs.github.io/cuppa-ng2-slidemenu/">
           <img alt="Brand" src="assets/img/cuppa-logo.png">
           Cuppa Slide Menu</a>
         </div>
@@ -17,7 +17,7 @@
               <li><a href="#Getting_Started_12">Getting Started<span class="sr-only">(current)</span></a></li>
               <li><a href="#Getting_Started_12">Installation</a></li>
               <li><a href="#Installation_14">Usage</a></li>
-              <li><a href="https://github.com/CuppaLabs/cuppa-angular2-slidemenu">Github</a></li>
+              <li><a href="https://github.com/CuppaLabs/cuppa-ng2-slidemenu">Github</a></li>
 
             </ul>
         </div><!--/.navbar-collapse -->
@@ -31,20 +31,20 @@
         <h4>Click on hamburger menu on top left  corner</h4>
 
         <p class="bt-group">
-            <a href="https://github.com/CuppaLabs/cuppa-angular2-slidemenu" target="_blank" type="button" class="btn btn-danger btn-lg"><i class="fa fa-github" aria-hidden="true"></i><span class="hidden-xs">Github</span></a>
-            <a href="#" type="button" class="btn btn-danger btn-lg"><i class="fa fa-tv" aria-hidden="true"></i><span class="hidden-xs">Demo</span></a>
-            <a href="https://github.com/CuppaLabs/cuppa-angular2-slidemenu/archive/master.zip" type="button" class="btn btn-danger btn-lg"><i class="fa fa-download" aria-hidden="true"></i><span class="hidden-xs"> Download </span></a>
+            <a href="https://github.com/CuppaLabs/cuppa-ng2-slidemenu" target="_blank" type="button" class="btn btn-danger btn-lg"><i class="fa fa-github" aria-hidden="true"></i><span class="hidden-xs">Github</span></a>
+            <a href="#" (click)="showMsg()" type="button" class="btn btn-danger btn-lg"><i class="fa fa-tv" aria-hidden="true"></i><span class="hidden-xs">Demo</span></a>
+            <a href="https://github.com/CuppaLabs/cuppa-ng2-slidemenu/archive/master.zip" type="button" class="btn btn-danger btn-lg"><i class="fa fa-download" aria-hidden="true"></i><span class="hidden-xs"> Download </span></a>
         </p>
       </div>
       <div class="col-md-6">
         <div class="iphone-img">
-        <img style="width: 71%;" src="assets/img/iphone-empty.png">
+        <img style="width: 100%;" src="assets/img/iphone-empty.png">
         <video type="video/webm" loop="" autoplay="" src="assets/img/demo4.webm"></video>
         </div>
       </div>
     </div>
     
-    <div class="col-md-8 col-md-offset-2 component-details">
+    <div class="col-md-8 col-md-offset-1 component-details">
 
     <div id="preview" preview="" debounce="150">
         <h2><a id="Getting_Started_12"></a>Getting Started</h2>
@@ -83,7 +83,7 @@
         </ol>
         <p>Thats all Folks !! You are good to go.</p>
         <h3>For Demo, click on hamburger on top left corner of the page</h3>
-        <p>Please raise any issues <a href="https://github.com/CuppaLabs/cuppa-angular2-slidemenu/issues">here</a></p>
+        <p>Please raise any issues <a href="https://github.com/CuppaLabs/cuppa-ng2-slidemenu/issues">here</a></p>
         <p>To run the code and build in your local, follw the below steps</p>
         <ul>
         <li>git clone <code>https://github.com/CuppaLabs/angular2-dataGrid.git</code></li>
@@ -97,4 +97,16 @@
         <p>Pradeep Kumar Terli  @ <a href="http://www.cuppalabs.com">Cuppa Labs</a></p>
         </div>
 
+    </div>
+    <div class="col-md-3">
+        <ad></ad>
+        <ad></ad>
+        <ad></ad>
+    </div>
+    <div class="guiding-overlay" *ngIf="showdemomsg" (click)="hideMsg()">
+        <div class="message-content">
+            <h3>For Demo Click on the hamburger on top left</h3>
+            <button class="btn btn-default btn-md" (click)="hideMsg()">Ok !! Got it !!</button>
+        </div>
+        
     </div>

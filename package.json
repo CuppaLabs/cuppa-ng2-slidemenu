@@ -15,7 +15,7 @@
     "build:aot": "npm run build:aot:prod",
     "build:dev": "npm run clean:docs && webpack --config config/webpack.dev.js --progress --profile",
     "build:docker": "npm run build:prod && docker build -t angular2-webpack-start:latest .",
-    "build:prod": "npm run clean:dist && webpack --config config/webpack.prod.js  --progress --profile --bail",
+    "build:prod": "npm run clean:docs && webpack --config config/webpack.prod.js  --progress --profile --bail",
     "build": "npm run build:dev",
     "ci:aot": "npm run lint && npm run test && npm run build:aot && npm run e2e",
     "ci:jit": "npm run lint && npm run test && npm run build:prod && npm run e2e",
@@ -88,7 +88,8 @@
     "rxjs": "~5.0.2",
     "zone.js": "~0.7.4",
     "ng2-handy-syntax-highlighter":"*",
-    "prismjs":"*"
+    "prismjs":"*",
+    "angular2-modal":"*"
   },
   "devDependencies": {
     "@angular/compiler-cli": "~2.4.3",

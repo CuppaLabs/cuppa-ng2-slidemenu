@@ -2,7 +2,7 @@ html{
 	height: 100%;
 }
 body{
-	background-color: #f7f7f7;
+	background-color: #fff;
 	height: 100%;
   font-family: 'Roboto',sans-serif;
 }
@@ -30,10 +30,10 @@ body{
   color: #0ea76e;
   padding-bottom: 15px;
   padding-top: 60px; 
-  max-height: 80%;
-  min-height: 75%;
+  height: 100%;
   overflow: hidden;
   border-bottom: 1px solid;
+  
 }
 .jumbotron > p{
   font-size: 18px;
@@ -48,14 +48,15 @@ body{
    font-weight: 300; 
 }
 .iphone-img{
-    margin-top: 25px;
     position: relative;
+    width: 350px;
+    margin: 30px auto;
 }
 .iphone-img > video{
     position: absolute;
-    left: 87px;
-    top: 51px;
-    width: 48%;
+    left: 52px;
+    top: 65px;
+    width: 235px;
     border: 2px solid #ccc;
 }
 .component-title{
@@ -103,11 +104,10 @@ iframe{
     }
     .iphone-img > video{
     position: absolute;
-    left: 146px;
-    top: 75px;
-    width: 48%;
+    left: 52px;
+    top: 65px;
+    width: 235px;
     border: 2px solid #ccc;
-}
 }
 .bt-group .btn{
   width:150px;
@@ -115,6 +115,13 @@ iframe{
 .bt-group .btn > .fa{
     margin-right: 10px;
 }
+.jumbotron{
+    max-height: 80%;
+    min-height: 500px;
+    margin-bottom: 10px;
+}
+}
+
 .ad-section{
     display: block;
     position: absolute;
@@ -184,4 +191,35 @@ handy-syntax-highlighter{
 }
 .code-list-ul{
     list-style: none;
+}
+.guiding-overlay{
+    position: fixed;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    top: 0;
+    background: #333;
+    background: rgba(0, 0, 0, 0.84);
+    z-index: 2;
+}
+.message-content{
+    position: relative;
+    top: 150px;
+    color: #fff;
+    font-weight: 300;
+    width: 300px;
+    border: 2px solid #fff;
+    padding: 15px;
+    margin: 0px auto;
+    text-align: center;
+}
+.message-content h3{
+    font-weight: 300;
+    line-height: 32px;
+}
+.message-content .btn{
+    background: transparent;
+    color: #fff;
+    border: 2px solid #fff;
+    border-radius: 0px;
 }

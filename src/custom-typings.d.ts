@@ -128,3 +128,8 @@ interface ErrorConstructor extends ErrorStackTraceLimit {}
 interface NodeRequireFunction extends Es6PromiseLoader  {}
 interface NodeModule extends WebpackModule {}
 interface Global extends GlobalEnvironment  {}
+declare interface Window {
+  adsbygoogle: any[];
+}
+
+declare var adsbygoogle: any[];
