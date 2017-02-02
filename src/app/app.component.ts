@@ -54,10 +54,10 @@ export class AppComponent implements OnInit {
     console.log(item);
   }
   npminstallScript: string = 'npm install cuppa-ng2-slidemenu';
-  installScript: string = "import { SlideMenuModule } from 'cuppa-ng2-grid/cuppa-ng2-slidemenu';";
+  installScript: string = "import { SlideMenuModule } from 'cuppa-ng2-slidemenu/cuppa-ng2-slidemenu';";
   moduleScript: string =  "import { NgModule } from '@angular/core';\n"+
         "import { BrowserModule } from '@angular/platform-browser';\n"+
-        "import { GridModule } from '@progress/kendo-angular-grid';\n"+
+        "import { SlideMenuModule } from 'cuppa-ng2-slidemenu/cuppa-ng2-slidemenu';\n"+
         "import { AppComponent } from './app.component';\n"+
         "\n"+
         "@NgModule({\n"+

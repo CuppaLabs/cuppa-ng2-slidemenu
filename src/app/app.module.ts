@@ -14,7 +14,7 @@ import { AppComponent } from './app.component';
 import { APP_RESOLVER_PROVIDERS } from './app.resolver';
 import { Ng2HandySyntaxHighlighterModule } from 'ng2-handy-syntax-highlighter';
 import { AppState, InternalStateType } from './app.service';
-import { SlideMenuModule } from './slideMenuNavigation/slideMenu';
+import { SlideMenuModule } from 'cuppa-ng2-slidemenu/cuppa-ng2-slidemenu';
 /**
  * `AppModule` is the main entry point into Angular2's bootstraping process
  */
