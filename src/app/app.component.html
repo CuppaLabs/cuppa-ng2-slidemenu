@@ -14,9 +14,8 @@
         </div>
         <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="#Getting_Started_12">Getting Started<span class="sr-only">(current)</span></a></li>
-              <li><a href="#Getting_Started_12">Installation</a></li>
-              <li><a href="#Installation_14">Usage</a></li>
+              <li><a href="http://cuppalabs.github.io/components/slidemenu">Getting Started<span class="sr-only">(current)</span></a></li>
+              <li><a href="http://cuppalabs.github.io/components/slidemenu/">Documentation</a></li>
               <li><a href="https://github.com/CuppaLabs/cuppa-ng2-slidemenu">Github</a></li>
 
             </ul>
@@ -42,66 +41,6 @@
         <video type="video/webm" loop="" autoplay="" src="assets/img/demo4.webm"></video>
         </div>
       </div>
-    </div>
-    
-    <div class="col-md-8 col-md-offset-1 component-details">
-
-    <div id="preview" preview="" debounce="150">
-        <h2><a id="Getting_Started_12"></a>Getting Started</h2>
-        <h3><a id="Installation_14"></a>Installation</h3>
-        <ol>
-        <li>
-        <p>The Slide menu package is published on the <a href="https://www.npmjs.com/package/cuppa-ng2-slidemenu">npm</a> Registry.</p>
-        </li>
-        <li>
-        <p>Install the package :<br>
-         <handy-syntax-highlighter  [language]="'markup'" [content]="npminstallScript"></handy-syntax-highlighter>
-        </li>
-        <li>
-        <p>Once installed import <code>SlideMenuModule</code> from the installed package into your module as follows:</p>
-        </li>
-        <li style="list-style-type: none">
-            <handy-syntax-highlighter  [language]="'typescript'" [content]="installScript"></handy-syntax-highlighter>
-        </li>
-        </ol>
-        <h3><a id="Installation_14"></a>Usage</h3>
-        <ol>
-        <li>Import the <code>SlideMenuModule</code> in your <code>ngModule</code> as follows:</li>
-        <li style="list-style-type: none">
-            <handy-syntax-highlighter  [language]="'typescript'" [content]="moduleScript"></handy-syntax-highlighter>
-        </li>
-        <li value=2>Place the component html tag in the template where the hamburger menu needs to be rendered.</li>
-        <li style="list-style-type: none">
-            <handy-syntax-highlighter  [language]="'html'" [content]="htmlTag"></handy-syntax-highlighter>
-        </li>
-        <li value="3">
-            Component requires a <code>menulist</code> to pass data as array of objects to the component, as follows:
-        </li>
-        <li style="list-style-type: none">
-             <handy-syntax-highlighter  [language]="'typescript'" [content]="jsScript"></handy-syntax-highlighter>
-        </li>
-        </ol>
-        <p>Thats all Folks !! You are good to go.</p>
-        <h3>For Demo, click on hamburger on top left corner of the page</h3>
-        <p>Please raise any issues <a href="https://github.com/CuppaLabs/cuppa-ng2-slidemenu/issues">here</a></p>
-        <p>To run the code and build in your local, follw the below steps</p>
-        <ul>
-        <li>git clone <code>https://github.com/CuppaLabs/angular2-dataGrid.git</code></li>
-        <li>npm install</li>
-        <li>npm start</li>
-        <li>Go to <code>http://localhost:3000</code> where your app will run.</li>
-        </ul>
-        <h2><a id="Licence_79"></a>Licence</h2>
-        <p>This project is licensed under the MIT license. See the <a href="LICENSE">LICENSE</a> file for more info.</p>
-        <h2><a id="Author_106"></a>Author</h2>
-        <p>Pradeep Kumar Terli  @ <a href="http://www.cuppalabs.com">Cuppa Labs</a></p>
-        </div>
-
-    </div>
-    <div class="col-md-3">
-        <ad></ad>
-        <ad></ad>
-        <ad></ad>
     </div>
     <div class="guiding-overlay" *ngIf="showdemomsg" (click)="hideMsg()">
         <div class="message-content">

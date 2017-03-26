@@ -76,6 +76,11 @@ tsconfig.json
 .gitattributes
 .gitignore
 
+.angular-cli.json
+.npmignore
+karma.conf.js
+protractor.conf.js
+/e2e/
 src/*
 src/app/*
 !src/app/slideMenuNavigation

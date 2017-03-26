@@ -83,8 +83,8 @@ To run the code and build in your local, follw the below steps
 
 - git clone `https://github.com/CuppaLabs/cuppa-ng2-slidemenu.git`
 - npm install
-- npm start
-- Go to `http://localhost:3000` where your app will run.
+- ng serve
+- Go to `http://localhost:4200` where your app will run.
 
 ## Licence
 
