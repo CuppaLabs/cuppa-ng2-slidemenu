@@ -17,6 +17,8 @@ Hamburger kind of menu for mobile and web is very common feature and a must have
 ```js
 import { SlideMenuModule } from 'cuppa-ng2-slidemenu/cuppa-ng2-slidemenu';
 ```
+###Dependencies
+- `Font-awesome` is required for the icons in component.
 
 ### Usage
 
@@ -85,6 +87,9 @@ To run the code and build in your local, follw the below steps
 - npm install
 - ng serve
 - Go to `http://localhost:4200` where your app will run.
+
+### Credits
+Thanks to font awesome for the wonderful font icons.
 
 ## Licence
 
