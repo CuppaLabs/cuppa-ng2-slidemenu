@@ -1,0 +1,22 @@
+<span (clickOutside)="closeMenu()">
+    <button (click)="menuToggle()" class="hamburger hamburger--{{config.animation}}" [ngClass]="{'is-active': menuState, '': !menuState}">
+  <span class="hamburger-box">
+    <span class="hamburger-inner"></span>
+</span>
+</button>
+<div class="menu-container cuppa-menu" [ngClass]="{'show-menu': menuState, 'hide-menu': !menuState}" [ngStyle]="{'top':config.offset.top+'px'}">
+    <ul>
+        <li *ngFor="let item of menulist">
+            <a *ngIf="item.subItems" (click)="toggleSubMenu(item)">{{item.title}} 
+                <i *ngIf="item.subItems" class="fa fa-angle-right" [@toggleArrow]="item.expand == 'show' ? 'down': 'right'"></i>
+            </a>
+            <a *ngIf="!item.subItems" [ngClass]="{'active': item.active}" (click)="onItemClick(item)">{{item.title}} </a>
+            <ul *ngIf="item.subItems" class="sub-menu" [@toggleMenu]="item.expand == undefined ? 'hide': item.expand">
+
+                <li *ngFor="let subitem of item.subItems"><a (click)="onItemClick(subitem)" [ngClass]="{'active': subitem.active}">{{subitem.title}}</a></li>
+            </ul>
+        </li>
+    </ul>
+</div>
+<span>
+<!--<div class="cuppa-menu-overlay" [ngClass]="{'show-overlay': menuState, 'hide-overlay': !menuState}"></div> -->

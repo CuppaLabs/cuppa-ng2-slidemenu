@@ -1,0 +1,77 @@
+$animation-time: .3s;
+$transition-type: cubic-bezier(0.215, 0.610, 0.355, 1.000);
+.menu-container{
+    width: 250px;
+    height: 100%;
+    position: fixed;
+    background: #fff;
+    top: 60px;
+    bottom: 0;
+    left: 0;
+    transition: all $animation-time $transition-type;
+    font-family:'Arial',sans-serif;
+    overflow: auto;
+    height: calc(100% - 60px);
+    z-index: 9999999;
+    box-shadow: 0px 5px 2px #ccc;
+}
+.menu-container .show-menu{
+    left: 0;
+}
+.menu-container.hide-menu{
+    left: -250px;
+}
+.menu-open{
+    margin-left: 250px !important;
+}
+.cuppa-menu ul{
+    list-style: none;
+    padding: 0px;
+}
+.cuppa-menu ul > li{
+    cursor: pointer;
+}
+.sub-menu {
+    overflow: hidden;
+}
+.sub-menu > li > a{
+    padding-left: 50px !important;
+}
+.cuppa-menu ul > li > a{
+    display: block;
+    padding: 15px 30px;
+    background: #fff;
+    text-decoration: none;
+    border-bottom: 1px solid #ccc;
+    transition: all .3s linear;
+}
+.cuppa-menu ul > li > a:hover{
+    background: #007bff !important;
+    color: #fff;
+}
+.cuppa-menu ul > li > a.active {
+    background: #007bff !important;
+    color: #fff;
+}
+.cuppa-menu ul > li > a > i{
+    font-size: 24px;
+    float: right;
+    margin-top: -2px;
+    pointer-events: none;
+}
+.cuppa-menu-overlay{
+    position: fixed;
+    background: #000;
+    top: 0;
+    left: 0;
+    right:0;
+    bottom: 0;
+    display: none;
+    transition: all 1s linear;
+}
+.show-overlay{
+    display: block;
+}
+.hide-overlay{
+    display: none;
+}

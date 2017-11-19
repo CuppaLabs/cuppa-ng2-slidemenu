@@ -74,6 +74,56 @@ private menuItemsArray: any[] = [
     console.log(item);
   }
 ```
+### Configuration Settings
+
+|Property|type|description|default|
+|:--- |:--- |:--- |:--- |
+|animation|string|name of the hamburger animation. Refer to the below list of supported animation types| collapse|
+|offset|object "offset": {"top": 55} |The offset value of the menu from top, left, right and bottom|0|
+|closeOnCLick|boolean|To close the menu as soo as an item is selected.|false|
+
+Supported animations list :
+- 3dx
+- 3dx-r
+- 3dy
+- 3dy-r
+- 3dxy
+- 3dxy-r
+- arrow
+- arrow-r
+- arrowalt
+- arrowalt-r
+- arrowturn
+- arrowturn-r
+- boring
+- collapse
+- collapse-r
+- elastic
+- elastic-r
+- emphatic
+- emphatic-r
+- minus
+- slider
+- slider-r
+- spin
+- spin-r
+- spring
+- spring-r
+- stand
+- stand-r
+- squeeze
+- vortex
+- vortex-r
+
+### Callback API
+
+- `onMenuClose()` - This method is triggered when menu is closed.
+- `onMenuOpen()` - Triggered when menu is opened.
+- `onItemSelect(item:any)` - Triggered when a menu item is selected. Returns the selected menu item object.
+
+### Dependencies
+- `Font-awesome` is required for the icons in component.
+
 
 Thats all Folks !! You are good to go.
 

@@ -1,1 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
+.ad-col, .ad-col2 {
+    position: absolute;
+    bottom: 0;
+    width: auto;
+}
+.ad-col2 {
+    right: 0;
+}

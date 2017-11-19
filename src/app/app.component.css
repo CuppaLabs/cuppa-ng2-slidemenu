@@ -1,0 +1,12 @@
+.iphone-img {
+    position: relative;
+    width: 350px;
+    margin: 30px auto;
+}
+.iphone-img > video {
+    position: absolute;
+    left: 52px;
+    top: 65px;
+    width: 235px;
+    border: 2px solid #ccc;
+}

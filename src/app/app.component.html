@@ -1,51 +1,47 @@
-<nav class="navbar navbar-default navbar-fixed-top">
-      <div class="container">
-        <div class="navbar-header">
-         <cuppa-slidemenu [menulist]="menuItemsArray" (open)="onMenuOpen()" (close)="onMenuClose()" (onItemSelect)="onItemSelect($event)"></cuppa-slidemenu>
-          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button>
-          <a class="navbar-brand" href="https://cuppalabs.github.io/cuppa-ng2-slidemenu/">
-          <img alt="Brand" src="assets/img/cuppa-logo.png">
-          Cuppa Slide Menu</a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-            <ul class="nav navbar-nav navbar-right">
-              <li><a href="http://cuppalabs.github.io/components/slidemenu">Getting Started<span class="sr-only">(current)</span></a></li>
-              <li><a href="http://cuppalabs.github.io/components/slidemenu/">Documentation</a></li>
-              <li><a href="https://github.com/CuppaLabs/cuppa-ng2-slidemenu">Github</a></li>
+  <nav class="navbar navbar-expand-md top-navbar d-print-none navbar-default">
+    <div class="container">
+      <cuppa-slidemenu [menulist]="menuItemsArray" [config]="menuConfig" (open)="onMenuOpen()" (close)="onMenuClose()" (onItemSelect)="onItemSelect($event)"></cuppa-slidemenu>
+      <a class="navbar-brand" href="/">
+      
+          <img src="https://cuppalabs.github.io/img/cuppa-logo-coffee11.png" height="32" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExampleDefault" aria-controls="navbarsExampleDefault"
+        aria-expanded="false" aria-label="Toggle navigation">
+        <span class="fa fa-navicon"></span>
+      </button>
 
-            </ul>
-        </div><!--/.navbar-collapse -->
-      </div>
-    </nav>
-    <div class="jumbotron col-md-12">
-      <div class="col-md-6">
-        <img style="width:18%;" src="assets/img/angular-logo.png">
-        <h1 class="component-title">Cuppa Slide Menu</h1>
-        <h2>Angular 2 slide out navigation menu for web and mobile</h2>
-        <h4>Click on hamburger menu on top left  corner</h4>
+      <div class="collapse navbar-collapse" id="navbarsExampleDefault">
 
-        <p class="bt-group">
-            <a href="https://github.com/CuppaLabs/cuppa-ng2-slidemenu" target="_blank" type="button" class="btn btn-danger btn-lg"><i class="fa fa-github" aria-hidden="true"></i><span class="hidden-xs">Github</span></a>
-            <a href="#" (click)="showMsg()" type="button" class="btn btn-danger btn-lg"><i class="fa fa-tv" aria-hidden="true"></i><span class="hidden-xs">Demo</span></a>
-            <a href="https://github.com/CuppaLabs/cuppa-ng2-slidemenu/archive/master.zip" type="button" class="btn btn-danger btn-lg"><i class="fa fa-download" aria-hidden="true"></i><span class="hidden-xs"> Download </span></a>
-        </p>
-      </div>
-      <div class="col-md-6">
-        <div class="iphone-img">
-        <img style="width: 100%;" src="assets/img/iphone-empty.png">
-        <video type="video/webm" loop="" autoplay="" src="assets/img/demo4.webm"></video>
-        </div>
+        <ul class="navbar-nav flex-row">
+          <li class="nav-item">
+            <a class="nav-item nav-link disabled" href="#">
+                Slide in Menu Examples
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="https://cuppalabs.github.io/components/slidemenu/">
+                Documentation
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="https://github.com/CuppaLabs/cuppa-ng2-slidemenu">
+               Github
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-item nav-link" href="http://cuppalabs.github.io/aboutme">About Me</a>
+          </li>
+        </ul>
       </div>
     </div>
-    <div class="guiding-overlay" *ngIf="showdemomsg" (click)="hideMsg()">
-        <div class="message-content">
-            <h3>For Demo Click on the hamburger on top left</h3>
-            <button class="btn btn-default btn-md" (click)="hideMsg()">Ok !! Got it !!</button>
+  </nav>
+
+  <div class="jumbotron">
+          <h1 class="display-3" style="text-align:center">Angular 2 Slide in Menu</h1>
+          <h2 class="lead" style="text-align:center">Demo and Example</h2>
+          <p style="text-align:center;width: 100%;max-width: 100%;">Click on the hamburger icon on the top left corner</p>
+          <div class="iphone-img">
+        <img src="assets/img/iphone-empty.png" style="width: 100%;">
+        <video autoplay="" loop="" src="assets/img/demo4.webm" type="video/webm"></video>
         </div>
-        
-    </div>
+        </div>
