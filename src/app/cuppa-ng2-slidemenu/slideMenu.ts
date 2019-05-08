@@ -67,7 +67,7 @@ export class SlideMenu implements AfterViewInit {
     ngAfterViewInit() {
 
     }
-    private menuToggle() {
+    public menuToggle() {
         this.menuState = !this.menuState;
         this.toggleOverlay();
         if (this.menuState) {
@@ -77,7 +77,7 @@ export class SlideMenu implements AfterViewInit {
             this.close.emit();
         }
     }
-    private closeMenu() {
+    public closeMenu() {
         this.menuState = false;
         this.overlayElem.style['opacity'] = 0;
     }
